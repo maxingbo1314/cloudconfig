@@ -1,4 +1,4 @@
-
+env: dev
 server:
   port: 8081
 spring:
@@ -19,5 +19,4 @@ mybatis:
   check-config-location: true
   config-location: classpath:mybatis-config.xml
   mapper-locations: classpath:mapping/*.xml
-env:
-  dev
+
