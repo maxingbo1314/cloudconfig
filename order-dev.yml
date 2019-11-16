@@ -20,6 +20,5 @@ mybatis:
   config-location: classpath:mybatis-config.xml
   mapper-locations: classpath:mapping/*.xml
 
-env:
-  dev
+
 
