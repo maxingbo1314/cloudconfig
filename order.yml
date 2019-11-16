@@ -11,7 +11,7 @@ spring:
 
 eureka:
   client:
-    service-url:
+    serviceUrl:
       defaultZone: http://localhost:7762/eureka/
       
 mybatis:
