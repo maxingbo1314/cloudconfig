@@ -1,1 +1,2 @@
-aaa: sss
+server:
+  port: 8882
