@@ -1,0 +1,26 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8900/eureka
+#网关端口
+server:
+  port: 8300
+#网关名称
+spring:
+  application:
+    name: service-zuul
+
+zuul:
+  routes:
+    #随意写
+    api-a:
+      #访问路径，以 127.0.0.1:8300/api-member 开头的都会转到会员服务
+      path: /api-member/**
+      #服务别名，服务器是集群，通过 ribbon 负载均衡
+      serveceId: app-member
+    api-b:
+      path: /api-order/**
+      serviceId: app-order
+
+
+
